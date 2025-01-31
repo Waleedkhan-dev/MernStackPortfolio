@@ -10,7 +10,7 @@ const Navbar = () => {
     <ul className="flex justify-evenly gap-10 items-center w-[80%]">
      <li className="font-medium cursor-pointer text-white">Home</li>
      <li className="font-medium cursor-pointer text-white">About</li>
-     <li className="font-medium cursor-pointer text-white">Resume</li>
+
      <li className="font-medium cursor-pointer text-white">Services</li>
      <li className="font-medium cursor-pointer text-white">Portfolio</li>
      <li className="font-medium cursor-pointer text-white">Contact</li>
