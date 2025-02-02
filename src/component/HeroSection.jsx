@@ -14,7 +14,7 @@ const HeroSection = () => {
         <div className="bg-[#090003] ">
           <div className="flex justify-center items-center gap-12">
             <div className="w-[43%]">
-              <h1 className="text-white text-4xl font-semibold">Hi, I’m <span className="text-[#FF014F]">waleed</span>  <br /> <span>a</span>
+              <h1 className="text-white text-4xl font-semibold">Hi, I’m <span className="text-[#FF014F]">waleed</span> <span>a</span> <br />
                 <span className="text-white gap-2">
 
                   <Typewriter
@@ -22,11 +22,10 @@ const HeroSection = () => {
                     loop={0}
                     cursor
                     cursorStyle='|'
-                    typeSpeed={50}
-                    deleteSpeed={50}
-                    delaySpeed={500}
+                    typeSpeed={20}
+                    deleteSpeed={20}
+                    delaySpeed={1000}
                   >
-
                   </Typewriter>
                 </span>
               </h1>
@@ -37,9 +36,9 @@ const HeroSection = () => {
               <div>
                 <h1>find with me</h1>
                 <div className="flex justify-start items-center gap-10">
-                  <button className="text-white flex  justify-center bg-[#1E2125] h-11 w-11 items-center text-center"><FaFacebookF /></button>
-                  <button onClick={openLinkedin} className="text-white flex  justify-center bg-[#1E2125] h-8 w-8  items-center text-center"><FaLinkedinIn className="w-full h-full" /></button>
-                  <button className="text-white flex  justify-center bg-[#1E2125] h-11 w-11 items-center text-center"><FaInstagram /></button>
+                  <button className="text-white flex  justify-center bg-[#1E2125] h-10 w-10 rounded cursor-pointer  items-center text-center"><FaFacebookF className="h-7 w-7 " /></button>
+                  <button onClick={openLinkedin} className="text-white flex  justify-center bg-[#1E2125] h-10 w-10 rounded cursor-pointer  items-center text-center"><FaLinkedinIn className="h-7 w-7 " /></button>
+                  <button className="text-white flex  justify-center bg-[#1E2125] h-10 w-10 rounded cursor-pointer  items-center text-center"><FaInstagram className="h-7 w-7 " /></button>
                 </div>
               </div>
             </div>
