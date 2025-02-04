@@ -11,7 +11,7 @@ const Navbar = () => {
      <li className="font-medium cursor-pointer text-white">Home</li>
      <li className="font-medium cursor-pointer text-white">About</li>
 
-     <li className="font-medium cursor-pointer text-white">Services</li>
+     <li className="font-medium cursor-pointer text-white">Skill</li>
      <li className="font-medium cursor-pointer text-white">Portfolio</li>
      <li className="font-medium cursor-pointer text-white">Contact</li>
     </ul>
