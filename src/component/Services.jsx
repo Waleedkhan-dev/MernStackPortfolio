@@ -47,7 +47,7 @@ const Services = () => {
     {myServices.map((item, index) => (
      <div
       key={index}
-      className="flex group cursor-pointer flex-col items-center text-center p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition-all duration-700 hover:bg-gradient-to-r from-[#ff416c] to-[#ff4b2b]"
+      className="flex group cursor-pointer flex-col items-center text-center p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition-all duration-700  hover:bg-gradient-to-r from-[#ff416c] to-[#ff4b2b]"
      >
       {/* Icon Section */}
       <div className="w-14 h-14 flex justify-center items-center rounded-full bg-gray-700 group-hover:bg-white transition-all duration-300">
