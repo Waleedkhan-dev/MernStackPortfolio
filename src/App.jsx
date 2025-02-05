@@ -4,6 +4,7 @@ import HeroSection from './component/HeroSection'
 import AboutMe from './component/AboutMe'
 import Services from './component/Services'
 import Projects from './component/Projects'
+import MySkills from './component/MySkills'
 // import HeroSection from './component/HeroSection'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
         <HeroSection />
         <AboutMe />
+        <MySkills />
         <Services />
         <Projects />
       </div>
