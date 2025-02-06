@@ -5,6 +5,7 @@ import AboutMe from './component/AboutMe'
 import Services from './component/Services'
 import Projects from './component/Projects'
 import MySkills from './component/MySkills'
+import WorkExpriance from './component/WorkExpriance'
 // import HeroSection from './component/HeroSection'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <HeroSection />
         <AboutMe />
         <MySkills />
+        <WorkExpriance />
         <Services />
         <Projects />
       </div>
