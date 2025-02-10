@@ -6,6 +6,7 @@ import Services from './component/Services'
 import Projects from './component/Projects'
 import MySkills from './component/MySkills'
 import WorkExpriance from './component/WorkExpriance'
+import Footer from './component/Footer'
 // import HeroSection from './component/HeroSection'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <WorkExpriance />
         <Services />
         <Projects />
+        <Footer />
       </div>
 
     </Fragment>
