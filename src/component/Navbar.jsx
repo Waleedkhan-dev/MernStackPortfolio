@@ -1,6 +1,8 @@
 import { Fragment } from "react";
 
 const Navbar = () => {
+ console.log("hello we are looking");
+
  return (
   <Fragment>
    <nav className="flex justify-between bg-gray-950 p-4 w-full  top-0 z-50">
