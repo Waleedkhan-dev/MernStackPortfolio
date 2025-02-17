@@ -7,13 +7,14 @@ import Projects from './component/Projects'
 import MySkills from './component/MySkills'
 import WorkExpriance from './component/WorkExpriance'
 import Footer from './component/Footer'
+import ContactUs from './component/ContactUs'
 // import HeroSection from './component/HeroSection'
 
 function App() {
 
 
   return (
-    <Fragment className="bg-gray-950">
+    <Fragment >
       <div className='bg-gray-950'>
         <Navbar />
         <HeroSection />
@@ -22,6 +23,7 @@ function App() {
         <WorkExpriance />
         <Services />
         <Projects />
+        <ContactUs />
         <Footer />
       </div>
 

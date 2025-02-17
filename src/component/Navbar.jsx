@@ -5,7 +5,7 @@ const Navbar = () => {
 
  return (
   <Fragment>
-   <nav className="flex justify-between bg-gray-950 p-4 w-full  top-0 z-50">
+   <nacdv className="flex justify-between bg-gray-950 p-4 w-full  top-0 z-50">
     <div className="w-[20%]">
      <h1 className="text-white font-semibold text-xl">Waleed</h1>
     </div>
@@ -41,7 +41,7 @@ const Navbar = () => {
       </a>
      </li>
     </ul>
-   </nav>
+   </nacdv>
   </Fragment>
  );
 };
