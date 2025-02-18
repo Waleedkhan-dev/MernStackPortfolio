@@ -37,28 +37,30 @@ const Services = () => {
 
  return (
   <Fragment>
-   {/* Title Section */}
-   <div className="flex justify-center items-center mt-3.5 p-6">
-    <h1 className="text-white text-5xl font-bold">My Services</h1>
-   </div>
+   <div id="services">
+    {/* Title Section */}
+    <div className="flex justify-center items-center mt-3.5 p-6">
+     <h1 className="text-white text-5xl font-bold">My Services</h1>
+    </div>
 
-   {/* Services Grid */}
-   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-4">
-    {myServices.map((item, index) => (
-     <div
-      key={index}
-      className="flex group cursor-pointer flex-col items-center text-center p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition-all duration-700  hover:bg-gradient-to-r from-[#ff416c] to-[#ff4b2b]"
-     >
-      {/* Icon Section */}
-      <div className="w-14 h-14 flex justify-center items-center rounded-full bg-gray-700 group-hover:bg-white transition-all duration-300">
-       {item.icon}
+    {/* Services Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-4">
+     {myServices.map((item, index) => (
+      <div
+       key={index}
+       className="flex group cursor-pointer flex-col items-center text-center p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition-all duration-700  hover:bg-gradient-to-r from-[#ff416c] to-[#ff4b2b]"
+      >
+       {/* Icon Section */}
+       <div className="w-14 h-14 flex justify-center items-center rounded-full bg-gray-700 group-hover:bg-white transition-all duration-300">
+        {item.icon}
+       </div>
+
+
+       <h1 className="text-white text-xl font-semibold mt-3">{item.title}</h1>
+       <p className="text-gray-300 text-start mt-2">{item.descrp}</p>
       </div>
-
-
-      <h1 className="text-white text-xl font-semibold mt-3">{item.title}</h1>
-      <p className="text-gray-300 text-start mt-2">{item.descrp}</p>
-     </div>
-    ))}
+     ))}
+    </div>
    </div>
   </Fragment>
  );

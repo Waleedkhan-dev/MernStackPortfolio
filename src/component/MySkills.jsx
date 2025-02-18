@@ -19,7 +19,7 @@ const MySkills = () => {
  console.log("skills", skills);
 
  return (
-  <section className="py-12 bg-[#030712]">
+  <section id="skills" className="py-12 bg-[#030712]">
    <div className="container mx-auto px-4">
     <h2 className="text-3xl font-bold text-center text-gray-50 mb-8">My Skills</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

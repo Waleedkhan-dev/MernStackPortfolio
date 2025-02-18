@@ -1,9 +1,19 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
-import pic1 from "../Images/about.avif";
+import pic1 from "../Images/portfoliofic.png";
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import AOS from "aos"
+import "aos/dist/aos.css";
 
 const HeroSection = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 900,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+  })
   const openLinkedin = () => {
     window.open("https://www.linkedin.com/in/waleed-ahmed-9b4b2a1b0/");
   };
@@ -13,7 +23,7 @@ const HeroSection = () => {
 
   return (
     <Fragment>
-      <div className="flex justify-center items-center h-[45vh] md:h-[50vh] sm:h-[20vh] px-6 md:px-12 lg:px-24">
+      <div id="home" className="flex lg:mt-16 md:mt-14 sm:mt-12 justify-center items-center lg:h-[85vh] md:h-[50vh] sm:h-[20vh] px-6 md:px-12 lg:px-24">
         <div className="flex flex-col md:flex-row items-center gap-12 w-full">
           <div className="w-full md:w-[65%] text-center md:text-left">
             <h1 className="text-white text-3xl md:text-4xl font-semibold">
@@ -48,7 +58,7 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          <div className="hidden md:block md:w-[40%]">
+          <div data-aos="zoom-in-up" className="hidden md:block md:w-[40%]">
             <img src={pic1} alt="Hero" className="w-full h-auto" />
           </div>
         </div>

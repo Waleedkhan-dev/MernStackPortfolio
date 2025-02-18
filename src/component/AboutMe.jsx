@@ -1,10 +1,10 @@
 import { Fragment } from "react";
-import pic1 from "../Images/about.avif";
+import pic1 from "../Images/portfoliofic.png";
 
 const AboutMe = () => {
  return (
   <Fragment>
-   <div className="flex flex-col md:flex-row justify-evenly items-center p-4">
+   <div id="about" className="flex flex-col md:flex-row justify-evenly items-center p-4">
     <div className="w-full md:w-1/2 lg:w-1/3 p-4">
      <img src={pic1} alt="About Me" className="w-full h-auto rounded-lg" />
     </div>
