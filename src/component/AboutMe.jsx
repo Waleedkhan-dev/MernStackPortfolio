@@ -1,7 +1,17 @@
 import { Fragment } from "react";
 import pic1 from "../Images/portfoliofic.png";
+import resume from "../Images/fullStackResume.pdf";
 
 const AboutMe = () => {
+
+ const handleDownload = () => {
+  const link = document.createElement("a")
+  link.href = resume
+  link.download = "fullStackResume.pdf"
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+ }
  return (
   <Fragment>
    <div id="about" className="flex flex-col md:flex-row justify-evenly items-center p-4">
@@ -14,7 +24,7 @@ const AboutMe = () => {
       Hi, I’m Waleed, a passionate MERN Stack Developer specializing in building dynamic and scalable web applications. With expertise in MongoDB, Express.js, React.js, and Node.js, I love turning ideas into functional, user-friendly digital experiences. I’m all about clean code, seamless UI/UX, and robust back-end systems. Let’s create something amazing together!
      </p>
      <div className="mt-5">
-      <button className="border-4 rounded-3xl border-[#FF014F] text-[#FF014F] px-5 py-2 hover:bg-[#FF014F] hover:text-white transition-colors duration-300">
+      <button onClick={handleDownload} className="border-4 rounded-3xl border-[#FF014F] text-[#FF014F] px-5 py-2 hover:bg-[#FF014F] hover:text-white transition-colors duration-300">
        Download CV
       </button>
      </div>
