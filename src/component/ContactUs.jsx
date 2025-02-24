@@ -7,7 +7,7 @@ import { MdLocationPin } from "react-icons/md";
 const ContactUs = () => {
  return (
   <Fragment>
-   <div className="flex flex-col items-center justify-center py-12 px-6 bg-gray-950 min-h-screen text-white">
+   <div id="contact" className="flex flex-col items-center justify-center py-12 px-6 bg-gray-950 min-h-screen text-white">
     <h1 className="text-4xl font-extrabold text-white mb-8">Get In Touch</h1>
     <div className="flex flex-col md:flex-row bg-gray-800 shadow-2xl rounded-lg p-10 w-full max-w-5xl">
      {/* Form Section */}

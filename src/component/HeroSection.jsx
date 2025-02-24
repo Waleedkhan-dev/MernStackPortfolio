@@ -23,9 +23,9 @@ const HeroSection = () => {
 
   return (
     <Fragment>
-      <div id="home" className="flex lg:mt-16 md:mt-14 sm:mt-12 justify-center items-center lg:h-[85vh] md:h-[50vh] sm:h-[20vh] px-6 md:px-12 lg:px-24">
+      <div id="home" className="flex lg:mt-16 md:mt-14 sm:mt-24 justify-center items-center lg:h-[85vh] md:h-[50vh] sm:h-[20vh] px-6 md:px-12 lg:px-24">
         <div className="flex flex-col md:flex-row items-center gap-12 w-full">
-          <div className="w-full md:w-[65%] text-center md:text-left">
+          <div className="w-full md:w-[65%] text-center md:text-start mt-24 md:mt-0">
             <h1 className="text-white text-3xl md:text-4xl font-semibold">
               Hi, I’m <span className="text-[#FF014F]">waleed</span> <br />
               <span className="text-white">

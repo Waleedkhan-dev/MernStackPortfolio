@@ -5,7 +5,7 @@ import { MdArrowOutward } from "react-icons/md";
 import img1 from "../Images/shiping.jpg";
 import img2 from "../Images/foods.jpg";
 import img3 from "../Images/system.jpg";
-
+import img4 from "../Images/theeagle.png"
 const Projects = () => {
  const myProjects = [
   {
@@ -24,9 +24,9 @@ const Projects = () => {
    link: "https://system-demo-green.vercel.app/profile/overview"
   },
   {
-   pic: img1,
+   pic: img4,
    title: "Project 4",
-   link: "https://thegiversconsulting.com"
+   link: "https://www.theeagles.io/"
   },
   {
    pic: img1,

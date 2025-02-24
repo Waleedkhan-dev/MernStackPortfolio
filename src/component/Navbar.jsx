@@ -1,8 +1,7 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import pic from "../Images/portfoliofic.png";
 import { IoMdMenu } from "react-icons/io";
 import { IoCloseSharp } from "react-icons/io5";
-import { useState } from "react";
 
 const Navbar = () => {
  const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,115 +13,53 @@ const Navbar = () => {
  return (
   <Fragment>
    <nav className="flex fixed justify-between bg-gray-950 p-4 w-full top-0 z-50">
+    {/* Logo Section */}
     <div className="w-[20%] flex items-center">
-     <div className="h-12 w-16 items-center rounded-full overflow-hidden">
+     <div className="h-12 w-16 rounded-full overflow-hidden">
       <img src={pic} alt="Profile" className="w-full h-full object-contain" />
      </div>
      <h1 className="text-white font-semibold text-xl">Waleed</h1>
     </div>
 
-    {/* Hamburger Icon for Mobile */}
-    <div className="md:hidden flex justify-center items-center">
+    {/* Hamburger Icon for Mobile & Tablet */}
+    <div className="lg:hidden flex justify-center items-center">
      <button onClick={toggleMenu} className="text-white focus:outline-none">
       {isMenuOpen ? <IoCloseSharp size={24} /> : <IoMdMenu size={24} />}
      </button>
     </div>
 
-    {/* Desktop Menu */}
-    <ul className="hidden md:flex justify-evenly gap-10 items-center w-[70%]">
-     <li className="font-medium cursor-pointer text-white relative group">
-      <a href="#home" className="hover:text-white transition duration-300">
-       Home
-       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-      </a>
-     </li>
-     <li className="font-medium cursor-pointer text-white relative group">
-      <a href="#about" className="hover:text-white transition duration-300">
-       About
-       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-      </a>
-     </li>
-     <li className="font-medium cursor-pointer text-white relative group">
-      <a href="#skills" className="hover:text-white transition duration-300">
-       Skills
-       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-      </a>
-     </li>
-     <li className="font-medium cursor-pointer text-white relative group">
-      <a href="#resume" className="hover:text-white transition duration-300">
-       Resume
-       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-      </a>
-     </li>
-     <li className="font-medium cursor-pointer text-white relative group">
-      <a href="#services" className="hover:text-white transition duration-300">
-       Services
-       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-      </a>
-     </li>
-     <li className="font-medium cursor-pointer text-white relative group">
-      <a href="#projects" className="hover:text-white transition duration-300">
-       My Projects
-       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-      </a>
-     </li>
-     <li className="font-medium cursor-pointer text-white relative group">
-      <a href="#contact" className="hover:text-white transition duration-300">
-       Contact
-       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-      </a>
-     </li>
+    {/* Desktop Menu (Only visible on large screens) */}
+    <ul className="hidden lg:flex justify-evenly gap-10 items-center w-[70%]">
+     {["Home", "About", "Skills", "Resume", "Services", "My Projects", "Contact"].map(
+      (item, index) => (
+       <li onClick={() => setIsMenuOpen(false)} key={index} className="font-medium cursor-pointer text-white relative group">
+        <a href={`#${item.toLowerCase()}`} className="hover:text-white transition duration-300">
+         {item}
+         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+        </a>
+       </li>
+      )
+     )}
     </ul>
 
-    {/* Mobile Menu */}
-    {isMenuOpen && (
-     <div className="md:hidden absolute top-16 left-0 w-full bg-gray-950 p-4">
-      <ul className="flex flex-col gap-4">
-       <li className="font-medium cursor-pointer text-white relative group">
-        <a href="#home" className="hover:text-white transition duration-300">
-         Home
-         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-        </a>
-       </li>
-       <li className="font-medium cursor-pointer text-white relative group">
-        <a href="#about" className="hover:text-white transition duration-300">
-         About
-         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-        </a>
-       </li>
-       <li className="font-medium cursor-pointer text-white relative group">
-        <a href="#skills" className="hover:text-white transition duration-300">
-         Skills
-         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-        </a>
-       </li>
-       <li className="font-medium cursor-pointer text-white relative group">
-        <a href="#resume" className="hover:text-white transition duration-300">
-         Resume
-         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-        </a>
-       </li>
-       <li className="font-medium cursor-pointer text-white relative group">
-        <a href="#services" className="hover:text-white transition duration-300">
-         Services
-         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-        </a>
-       </li>
-       <li className="font-medium cursor-pointer text-white relative group">
-        <a href="#projects" className="hover:text-white transition duration-300">
-         My Projects
-         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-        </a>
-       </li>
-       <li className="font-medium cursor-pointer text-white relative group">
-        <a href="#contact" className="hover:text-white transition duration-300">
-         Contact
-         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-        </a>
-       </li>
-      </ul>
-     </div>
-    )}
+    {/* Mobile & Tablet Menu */}
+    <div
+     className={`lg:hidden absolute top-16 left-0 w-full bg-gray-950 p-4 transition-all duration-300 ${isMenuOpen ? "block" : "hidden"
+      }`}
+    >
+     <ul className="flex flex-col gap-4">
+      {["Home", "About", "Skills", "Resume", "Services", "My Projects", "Contact"].map(
+       (item, index) => (
+        <li key={index} className="font-medium cursor-pointer text-white relative group">
+         <a onClick={() => setIsMenuOpen(false)} href={`#${item.toLowerCase()}`} className="hover:text-white transition duration-300">
+          {item}
+          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+         </a>
+        </li>
+       )
+      )}
+     </ul>
+    </div>
    </nav>
   </Fragment>
  );
