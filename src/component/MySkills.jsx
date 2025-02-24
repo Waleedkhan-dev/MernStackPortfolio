@@ -12,7 +12,7 @@ const MySkills = () => {
   { name: 'JavaScript', icon: <FaJs />, percentage: 75, color: "bg-yellow-500" },
   { name: 'React', icon: <FaReact />, percentage: 90, color: "bg-cyan-500" },
   { name: 'Node.js', icon: <FaNodeJs />, percentage: 70, color: "bg-green-600" },
-  { name: 'Express.js', icon: <SiExpress />, percentage: 95, color: "bg-gray-700" },
+  { name: 'Express.js', icon: <SiExpress />, percentage: 95, color: "bg-red-900" },
   { name: 'MongoDB', icon: <FaDatabase />, percentage: 80, color: "bg-green-500" },
  ];
 
@@ -32,9 +32,9 @@ const MySkills = () => {
        <h3 className="text-xl font-semibold text-white">{skill.name}</h3>
 
        {/* ✅ Corrected Progress Bar */}
-       <div className="w-full bg-gray-700 rounded-full h-4 mt-2">
+       <div className="w-full bg-gray-700 rounded-full h-3  mt-2">
         <div
-         className={`${skill.color} h-4 rounded-full transition-all duration-500 flex items-center justify-center`}
+         className={`${skill.color} h-3 rounded-full transition-all duration-500 flex items-center justify-center`}
          style={{ width: `${skill.percentage}%` }} // ✅ Correctly Fills Percentage
         >
          <span className="text-white text-xs font-bold">{skill.percentage}%</span>
