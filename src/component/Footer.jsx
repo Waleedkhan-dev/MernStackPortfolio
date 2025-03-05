@@ -19,7 +19,7 @@ const Footer = () => {
      {/* Quick Links */}
      <div className="text-center">
       <h3 className="text-xl font-bold mb-4">Quick Links</h3>
-      <ul className="text-gray-400">
+      <ul className="text-gray-400 flex justify-evenly">
        <li className="mb-2">
         <a href="#home" className="hover:text-white transition duration-300">Home</a>
        </li>
@@ -40,8 +40,8 @@ const Footer = () => {
 
      {/* Resources Section */}
      <div className="text-center">
-      <h3 className="text-xl font-bold mb-4">Resources</h3>
-      <ul className="text-gray-400">
+      <h3 className="text-xl  font-bold mb-4">Resources</h3>
+      <ul className="text-gray-400 flex justify-evenly">
        <li className="mb-2">
         <a href="#docs" className="hover:text-white transition duration-300">Documentation</a>
        </li>
@@ -86,7 +86,7 @@ const Footer = () => {
         <FaTwitter className="w-6 h-6" />
        </a>
        <a
-        href="mailto:youremail@example.com"
+        href="walledkhan4228@gmail.com"
         className="text-gray-400 hover:text-white transition duration-300"
        >
         <FaEnvelope className="w-6 h-6" />
