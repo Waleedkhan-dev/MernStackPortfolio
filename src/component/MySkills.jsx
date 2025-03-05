@@ -47,7 +47,7 @@ const MySkills = () => {
      {skills.map((skill, index) => (
       <div
        data-aos="fade-up"
-       data-aos-anchor-placement="top-center"
+
        key={index}
        className="bg-[#1E2939] cursor-pointer group flex flex-col items-center justify-center p-6 w-full rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 text-center hover:bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] max-w-sm mx-auto"
       >
