@@ -26,12 +26,12 @@ const WorkExperience = () => {
       <div className="mb-6">
        <h1 className="text-xl font-medium text-white">Matric</h1>
        <h2 className="text-lg text-gray-300">2019-2020</h2>
-       <p className="text-gray-300">Govet Higher Secondary School Lodhran</p>
+       <p className="text-gray-300">Govt Higher Secondary School Lodhran</p>
       </div>
       <div className="mb-6">
        <h1 className="text-xl font-medium text-white">Intermediate</h1>
        <h2 className="text-lg text-gray-300">2020-2022</h2>
-       <p className="text-gray-300">Panjab College Lodhran</p>
+       <p className="text-gray-300">Punjab College Lodhran</p>
       </div>
       <div className="mb-6">
        <h1 className="text-xl font-medium text-white">Bachelor In Software Engineering</h1>
@@ -49,7 +49,7 @@ const WorkExperience = () => {
       <div className="mb-2 lg:mb-6 md:mb-4">
        <h1 className="text-xl font-medium text-white">React Frontend Developer</h1>
        <h2 className="text-lg text-gray-300">2023-2024</h2>
-       <p className="text-gray-300">Codes Thinker Software House (Onside)</p>
+       <p className="text-gray-300">Codes Thinker Software House (Onsite)</p>
       </div>
       <div className="mb-2 lg:mb-6 md:mb-4">
        <h1 className="text-xl font-medium text-white">Frontend Developer</h1>
@@ -59,7 +59,7 @@ const WorkExperience = () => {
       <div className="mb-2 lg:mb-6 md:mb-4">
        <h1 className="text-xl font-medium text-white">MERN Stack Developer </h1>
        <h2 className="text-lg text-gray-300">2025-Present</h2>
-       <p className="text-gray-300">Coding First Software House(Onside)</p>
+       <p className="text-gray-300">Coding First Software House(Onsite)</p>
       </div>
      </div>
     </div>
