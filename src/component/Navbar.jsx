@@ -15,7 +15,7 @@ const Navbar = () => {
       <nav className="flex fixed justify-between bg-gray-950 p-4 w-full top-0 z-50">
 
         <div className="w-[20%] flex items-center">
-          <div className="h-12 w-16 rounded-full overflow-hidden">
+          <div className="h-12 hidden lg:block w-16 rounded-full overflow-hidden">
             <img src={pic} alt="Profile" className="w-full h-full object-contain" />
           </div>
           <h1 className="text-white font-semibold text-xl">Waleed</h1>
@@ -42,7 +42,7 @@ const Navbar = () => {
           )}
         </ul>
 
-        {/* Mobile & Tablet Menu */}
+
         <div
           className={`lg:hidden absolute top-16 left-0 w-full bg-gray-950 p-4 transition-all duration-300 ${isMenuOpen ? "block" : "hidden"
             }`}

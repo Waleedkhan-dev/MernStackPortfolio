@@ -43,7 +43,7 @@ const WorkExperience = () => {
 
      <div data-aos="fade-up" className="w-1 h-[65vh] md:h-[37vh] rounded lg:h-[57vh] text-white bg-gradient-to-b from-[#FF014F] to-[#FF5733] mx-4"></div>
 
-     {/* Work Experience Section */}
+
      <div data-aos="fade-left" className="">
       <h1 className="text-2xl font-semibold mb-4 text-white"> Experience</h1>
       <div className="mb-2 lg:mb-6 md:mb-4">
