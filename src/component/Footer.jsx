@@ -62,7 +62,7 @@ const Footer = () => {
       <h3 className="text-xl font-bold mb-4">Connect with Me</h3>
       <div className="flex justify-center md:justify-end space-x-4">
        <a
-        href="https://github.com/yourusername"
+        href="https://github.com/waleedkhan69"
         target="_blank"
         rel="noopener noreferrer"
         className="text-gray-400 hover:text-white transition duration-300"
@@ -70,7 +70,7 @@ const Footer = () => {
         <FaGithub className="w-6 h-6" />
        </a>
        <a
-        href="https://linkedin.com/in/yourusername"
+        href="https://www.linkedin.com/in/waleed38/"
         target="_blank"
         rel="noopener noreferrer"
         className="text-gray-400 hover:text-white transition duration-300"

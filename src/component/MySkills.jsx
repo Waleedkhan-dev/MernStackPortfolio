@@ -1,9 +1,20 @@
-import React from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
+import React, { useEffect } from 'react';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaDatabase, FaBootstrap } from 'react-icons/fa';
 import { SiExpress, SiTailwindcss } from "react-icons/si";
-
 const MySkills = () => {
- // List of skills
+ useEffect(() => {
+  Aos.init({
+   offset: 200,
+   duration: 1200,
+   easing: 'ease-out-back',
+   delay: 100,
+   once: false,
+   mirror: true,
+  });
+ }, []);
+
  const skills = [
   { name: 'HTML', icon: <FaHtml5 />, percentage: 90, color: "bg-orange-500" },
   { name: 'CSS', icon: <FaCss3Alt />, percentage: 85, color: "bg-blue-500" },
@@ -23,6 +34,8 @@ const MySkills = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
      {skills.map((skill, index) => (
       <div
+       data-aos="fade-up"
+       data-aos-anchor-placement="top-center"
        key={index}
        className="bg-[#1E2939] cursor-pointer group flex flex-col items-center justify-center p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 text-center hover:bg-gradient-to-r from-[#ff416c] to-[#ff4b2b]"
       >

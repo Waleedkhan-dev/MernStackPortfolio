@@ -1,6 +1,18 @@
-import { Fragment } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { Fragment, useEffect } from "react";
 
 const WorkExperience = () => {
+ useEffect(() => {
+  Aos.init({
+   offset: 200,
+   duration: 1200,
+   easing: 'ease-out-back',
+   delay: 100,
+   once: false,
+   mirror: true,
+  });
+ }, []);
  return (
   <Fragment>
    <div id="resume">
@@ -9,7 +21,7 @@ const WorkExperience = () => {
     </h1>
     <div className="flex justify-center text-start gap-2 p-2 md:p-2 lg:p-4 items-start">
      {/* Education Section */}
-     <div className="px-2">
+     <div data-aos="fade-right" className="px-2">
       <h1 className="text-2xl font-semibold mb-4 text-white">Education</h1>
       <div className="mb-6">
        <h1 className="text-xl font-medium text-white">Matric</h1>
@@ -29,10 +41,10 @@ const WorkExperience = () => {
      </div>
 
      {/* Vertical Border */}
-     <div className="w-1 h-[67vh] md:h-[37vh] rounded lg:h-[57vh] text-white bg-gradient-to-b from-[#FF014F] to-[#FF5733] mx-4"></div>
+     <div data-aos="fade-up" className="w-1 h-[67vh] md:h-[37vh] rounded lg:h-[57vh] text-white bg-gradient-to-b from-[#FF014F] to-[#FF5733] mx-4"></div>
 
      {/* Work Experience Section */}
-     <div className="">
+     <div data-aos="fade-left" className="">
       <h1 className="text-2xl font-semibold mb-4 text-white"> Experience</h1>
       <div className="mb-2 lg:mb-6 md:mb-4">
        <h1 className="text-xl font-medium text-white">React Frontend Developer</h1>

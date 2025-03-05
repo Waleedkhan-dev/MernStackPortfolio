@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 
 
@@ -6,7 +6,20 @@ import img1 from "../Images/shiping.jpg";
 import img2 from "../Images/foods.jpg";
 import img3 from "../Images/system.jpg";
 import img4 from "../Images/theeagle.png"
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Projects = () => {
+ useEffect(() => {
+  Aos.init({
+   offset: 200,
+   duration: 1200,
+   easing: 'ease-out-back',
+   delay: 100,
+   once: false,
+   mirror: true,
+  });
+ }, []);
+
  const myProjects = [
   {
    pic: img1,
@@ -50,10 +63,11 @@ const Projects = () => {
      <h1 className="text-white text-5xl font-bold"> My Projects</h1>
     </div>
 
-    {/* Projects Grid */}
+
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-4">
      {myProjects.map((item, index) => (
       <div
+       data-aos="zoom-in-up"
        key={index}
        className="relative group flex flex-col items-center text-center p-4 bg-gray-800 rounded-lg shadow-lg cursor-pointer hover:scale-105 transition-transform duration-500"
        onMouseEnter={() => setHoveredProject(index)}

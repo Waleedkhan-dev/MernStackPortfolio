@@ -1,7 +1,19 @@
-import { Fragment } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { Fragment, useEffect } from "react";
 import { FaLaptopCode, FaCode, FaServer, FaPlug, FaMobileAlt, FaCloudUploadAlt } from "react-icons/fa";
 
 const Services = () => {
+ useEffect(() => {
+  Aos.init({
+   offset: 200,
+   duration: 1200,
+   easing: 'ease-out-back',
+   delay: 100,
+   once: false,
+   mirror: true,
+  });
+ }, []);
  const myServices = [
   {
    icon: <FaLaptopCode className="text-3xl text-[#FF014F]" />,
@@ -38,19 +50,20 @@ const Services = () => {
  return (
   <Fragment>
    <div id="services">
-    {/* Title Section */}
+
     <div className="flex justify-center items-center mt-3.5 p-6">
      <h1 className="text-white text-5xl font-bold">My Services</h1>
     </div>
 
-    {/* Services Grid */}
+
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-4">
      {myServices.map((item, index) => (
       <div
+       data-aos="fade-up"
        key={index}
        className="flex group cursor-pointer flex-col items-center text-center p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition-all duration-700  hover:bg-gradient-to-r from-[#ff416c] to-[#ff4b2b]"
       >
-       {/* Icon Section */}
+
        <div className="w-14 h-14 flex justify-center items-center rounded-full bg-gray-700 group-hover:bg-white transition-all duration-300">
         {item.icon}
        </div>
