@@ -46,6 +46,9 @@ const Services = () => {
    descrp: "Deploy applications on Vercel, Netlify, and AWS, providing continuous updates, optimizations, and security maintenance."
   }
  ];
+ const animations = ["fade-up", "fade-up", "fade-up", "fade-up", "fade-up", "fade-up"];
+ const selectAnimation = (index) => animations[index % animations.length];
+
 
  return (
   <Fragment>
@@ -59,7 +62,9 @@ const Services = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-4">
      {myServices.map((item, index) => (
       <div
-       data-aos="fade-up"
+       data-aos={selectAnimation}
+       data-aos-delay={`${index * 100}`}
+
        key={index}
        className="flex group cursor-pointer flex-col items-center text-center p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition-all duration-700  hover:bg-gradient-to-r from-[#ff416c] to-[#ff4b2b]"
       >

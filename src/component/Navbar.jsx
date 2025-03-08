@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import pic from "../Images/portfoliofic.png";
+import pic from "../Images/waleedlogo.jpeg";
 import { IoMdMenu } from "react-icons/io";
 import { IoCloseSharp } from "react-icons/io5";
 
@@ -12,13 +12,13 @@ const Navbar = () => {
 
   return (
     <Fragment>
-      <nav className="flex fixed justify-between bg-gray-950 p-4 w-full top-0 z-50">
+      <nav className="flex fixed justify-between shadow-2xl bg-gray-900 p-4 w-full top-0 z-50">
 
-        <div className="w-[20%] flex items-center">
-          <div className="h-12 hidden lg:block w-16 rounded-full overflow-hidden">
-            <img src={pic} alt="Profile" className="w-full h-full object-contain" />
+        <div className="w-[20%] flex justify-evenly items-center">
+          <div className=" h-16  cursor-pointer lg:block w-16 rounded-full overflow-hidden">
+            <img src={pic} onClick={() => window.location.href = "#home"} alt="Profile" className="w-full h-full rounded-full object-contain" />
           </div>
-          <h1 className="text-white font-semibold text-xl">Waleed</h1>
+
         </div>
 
 
@@ -30,7 +30,7 @@ const Navbar = () => {
 
 
         <ul className="hidden lg:flex justify-evenly gap-10 items-center w-[70%]">
-          {["Home", "About", "Skills", "Resume", "Services", "My Projects", "Contact"].map(
+          {["Home", "About", "Skills", "Resume", "Services", "My Projects"].map(
             (item, index) => (
               <li onClick={() => setIsMenuOpen(false)} key={index} className="font-medium cursor-pointer text-white relative group">
                 <a href={`#${item.toLowerCase()}`} className="hover:text-white transition duration-300">
@@ -40,6 +40,9 @@ const Navbar = () => {
               </li>
             )
           )}
+          <li>
+            <button onClick={() => window.location.href = '#contact'} className="text-white bg-pink-700 px-4 py-2 rounded-2xl cursor-pointer ">Contact Us</button>
+          </li>
         </ul>
 
 
