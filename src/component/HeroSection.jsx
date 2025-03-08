@@ -15,7 +15,7 @@ const HeroSection = () => {
     });
   })
   const openLinkedin = () => {
-    window.open("https://www.linkedin.com/in/waleed-ahmed-9b4b2a1b0/");
+    window.open("https://www.linkedin.com/in/waleed-khan-b2aba4327/");
   };
   const openGithub = () => {
     window.open("https://github.com/waleedkhan69");
