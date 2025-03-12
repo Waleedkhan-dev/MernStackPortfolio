@@ -6,6 +6,7 @@ import img1 from "../Images/shiping.jpg";
 import img2 from "../Images/foods.jpg";
 import img3 from "../Images/system.jpg";
 import img4 from "../Images/theeagle.png"
+import img5 from "../Images/redux.png"
 import Aos from "aos";
 import "aos/dist/aos.css";
 const Projects = () => {
@@ -38,13 +39,13 @@ const Projects = () => {
   },
   {
    pic: img4,
-   title: "Project 4",
+   title: "The Eagles.io",
    link: "https://www.theeagles.io/"
   },
   {
-   pic: img1,
-   title: "Project 5",
-   link: "https://thegiversconsulting.com"
+   pic: img5,
+   title: "E-commerce Products",
+   link: "https://redux-thunk-e-commerce.netlify.app/"
   },
   {
    pic: img1,
