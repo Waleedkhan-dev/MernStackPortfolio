@@ -30,7 +30,7 @@ const Navbar = () => {
 
 
         <ul className="hidden lg:flex justify-evenly gap-10 items-center w-[70%]">
-          {["Home", "About", "Skills", "Resume", "Services", "My Projects"].map(
+          {["Home", "About", "Skills", "Resume", "Services", "Projects"].map(
             (item, index) => (
               <li onClick={() => setIsMenuOpen(false)} key={index} className="font-medium cursor-pointer text-white relative group">
                 <a href={`#${item.toLowerCase()}`} className="hover:text-white transition duration-300">
