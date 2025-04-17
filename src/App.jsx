@@ -8,7 +8,7 @@ import MySkills from './component/MySkills'
 import WorkExpriance from './component/WorkExpriance'
 import Footer from './component/Footer'
 import ContactUs from './component/ContactUs'
-// import HeroSection from './component/HeroSection'
+
 
 function App() {
 

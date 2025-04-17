@@ -12,49 +12,71 @@ const Navbar = () => {
 
   return (
     <Fragment>
-      <nav className="flex fixed justify-between shadow-2xl bg-gray-900 p-4 w-full top-0 z-50">
+      <nav className="flex items-center justify-between fixed shadow-2xl bg-gray-900 p-4 w-full top-0 z-50">
 
-        <div className="w-[20%] flex justify-evenly items-center">
-          <div className=" h-16  cursor-pointer lg:block w-16 rounded-full overflow-hidden">
-            <img src={pic} onClick={() => window.location.href = "#home"} alt="Profile" className="w-full h-full rounded-full object-contain" />
+        {/* Left section: Profile Image */}
+        <div className="w-1/3 sm:w-1/4 md:w-1/5 flex justify-start items-center">
+          <div className="h-12 w-12 md:h-16 md:w-16 cursor-pointer rounded-full overflow-hidden">
+            <img
+              src={pic}
+              onClick={() => window.location.href = "#home"}
+              alt="Profile"
+              className="w-full h-full object-contain rounded-full"
+            />
           </div>
-
         </div>
 
-
-        <div className="lg:hidden flex justify-center items-center">
+        {/* Right section: Hamburger for small screens */}
+        <div className="lg:hidden flex justify-end items-center w-1/3">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
-            {isMenuOpen ? <IoCloseSharp size={24} /> : <IoMdMenu size={24} />}
+            {isMenuOpen ? <IoCloseSharp size={28} /> : <IoMdMenu size={28} />}
           </button>
         </div>
 
-
-        <ul className="hidden lg:flex justify-evenly gap-10 items-center w-[70%]">
-          {["Home", "About", "Skills", "Resume", "Services", "Projects"].map(
-            (item, index) => (
-              <li onClick={() => setIsMenuOpen(false)} key={index} className="font-medium cursor-pointer text-white relative group">
-                <a href={`#${item.toLowerCase()}`} className="hover:text-white transition duration-300">
-                  {item}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-                </a>
-              </li>
-            )
-          )}
+        {/* Center menu for large screens */}
+        <ul className="hidden lg:flex justify-evenly items-center w-2/3 gap-6">
+          {["Home", "About", "Skills", "Resume", "Services", "Projects"].map((item, index) => (
+            <li
+              onClick={() => setIsMenuOpen(false)}
+              key={index}
+              className="font-medium cursor-pointer text-white relative group"
+            >
+              <a
+                href={`#${item.toLowerCase()}`}
+                className="hover:text-white transition duration-300"
+              >
+                {item}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+              </a>
+            </li>
+          ))}
           <li>
-            <button onClick={() => window.location.href = '#contact'} className="text-white bg-pink-700 px-4 py-2 rounded-2xl cursor-pointer ">Contact Us</button>
+            <button
+              onClick={() => window.location.href = "#contact"}
+              className="text-white bg-pink-700 px-4 py-2 rounded-2xl cursor-pointer"
+            >
+              Contact Us
+            </button>
           </li>
         </ul>
 
-
+        {/* Mobile/Tablet Dropdown Menu */}
         <div
           className={`lg:hidden absolute top-16 left-0 w-full bg-gray-950 p-4 transition-all duration-300 ${isMenuOpen ? "block" : "hidden"
             }`}
         >
           <ul className="flex flex-col gap-4">
-            {["Home", "About", "Skills", "Resume", "Services", "My Projects", "Contact"].map(
+            {["Home", "About", "Skills", "Resume", "Services", "Projects", "Contact"].map(
               (item, index) => (
-                <li key={index} className="font-medium cursor-pointer text-white relative group">
-                  <a onClick={() => setIsMenuOpen(false)} href={`#${item.toLowerCase()}`} className="hover:text-white transition duration-300">
+                <li
+                  key={index}
+                  className="font-medium cursor-pointer text-white relative group"
+                >
+                  <a
+                    onClick={() => setIsMenuOpen(false)}
+                    href={`#${item.toLowerCase()}`}
+                    className="hover:text-white transition duration-300"
+                  >
                     {item}
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
                   </a>
@@ -65,6 +87,7 @@ const Navbar = () => {
         </div>
       </nav>
     </Fragment>
+
   );
 };
 
