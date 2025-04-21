@@ -23,14 +23,13 @@ const Navbar = () => {
 
         </div>
 
-        {/* Right section: Hamburger for small screens */}
+
         <div className="lg:hidden flex justify-end items-center w-1/3">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
             {isMenuOpen ? <IoCloseSharp size={28} /> : <IoMdMenu size={28} />}
           </button>
         </div>
 
-        {/* Center menu for large screens */}
         <ul className="hidden lg:flex justify-evenly items-center w-2/3 gap-6">
           {["Home", "About", "Skills", "Resume", "Services", "Projects"].map((item, index) => (
             <li
