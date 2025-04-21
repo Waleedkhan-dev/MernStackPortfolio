@@ -33,7 +33,8 @@ const AboutMe = () => {
      data-aos-offset="300"
      data-aos-easing="ease-in-sine" className="w-full md:w-1/2 lg:w-2/5 flex flex-col items-start justify-center text-start gap-2 p-4">
      <h1 className="font-bold text-white text-3xl">About Me</h1>
-     <p className="text-gray-300">
+     <p className="text-gray-300 text-wrap
+      text-justify">
       Hi, I’m Waleed, a passionate MERN Stack Developer specializing in building dynamic and scalable web applications. With expertise in MongoDB, Express.js, React.js, and Node.js, I love turning ideas into functional, user-friendly digital experiences. I’m all about clean code, seamless UI/UX, and robust back-end systems. Let’s create something amazing together!
      </p>
      <div className="mt-5">

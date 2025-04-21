@@ -9,9 +9,9 @@ const HeroSection = () => {
   useEffect(() => {
     AOS.init({
       offset: 200,
-      duration: 900,
+      duration: 1200,
       easing: 'ease-in-sine',
-      delay: 100,
+      delay: 300,
     });
   })
   const openLinkedin = () => {

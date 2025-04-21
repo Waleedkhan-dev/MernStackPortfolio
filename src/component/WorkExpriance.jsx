@@ -16,7 +16,7 @@ const WorkExperience = () => {
  return (
   <Fragment>
    <div id="resume">
-    <h1 className="text-4xl font-bold text-center mb-8 text-white">
+    <h1 className=" font-bold text-center mb-8 text-white">
      Education & Work Experience
     </h1>
     <div className="flex justify-center text-start gap-2 p-2 md:p-2 lg:p-4 items-start">
@@ -47,9 +47,9 @@ const WorkExperience = () => {
      <div data-aos="fade-left" className="">
       <h1 className="text-2xl font-semibold mb-4 text-white"> Experience</h1>
       <div className="mb-2 lg:mb-6 md:mb-4">
-       <h1 className="text-xl font-medium text-white">React Frontend Developer</h1>
+       {/* <h1 className="text-xl w-auto font-medium text-white">React Frontend Developer</h1> */}
        <h2 className="text-lg text-gray-300">2023-2024</h2>
-       <p className="text-gray-300">Codes Thinker Software House (Onsite)</p>
+       {/* <p className="text-gray-300 w-auto">Codes Thinker Software House (Onsite)</p> */}
       </div>
       <div className="mb-2 lg:mb-6 md:mb-4">
        <h1 className="text-xl font-medium text-white">Frontend Developer</h1>
