@@ -14,13 +14,13 @@ const Navbar = () => {
 
   return (
     <Fragment>
-      <nav className="flex items-center justify-between fixed shadow-2xl bg-gray-900 px-4 w-full top-0 z-50">
+      <nav className="flex items-center justify-between fixed shadow-2xl bg-gray-900 p-4  w-full top-0 z-50">
 
         {/* Left section: Profile Image */}
-        <div className="w-1/3 sm:w-1/4 md:w-1/5 flex justify-center items-center bg-yellow-500">
-          <div className="h-12 w-12 md:h-16 md:w-16 cursor-pointer rounded-full ">
-            <SiWebpack className="text-white bg-red-600" onClick={() => window.location.href = "#home"} />
-          </div>
+        <div className="w-1/3 sm:w-1/4 md:w-1/5 flex justify-center items-center ">
+
+          <SiWebpack className="text-white text-3xl cursor-pointer" onClick={() => window.location.href = "#home"} />
+
         </div>
 
         {/* Right section: Hamburger for small screens */}
