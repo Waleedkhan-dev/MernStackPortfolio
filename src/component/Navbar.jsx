@@ -58,10 +58,10 @@ const Navbar = () => {
 
         {/* Mobile/Tablet Dropdown Menu */}
         <div
-          className={`lg:hidden absolute top-16 left-0 w-full bg-gray-950 p-4 transition-all duration-300 ${isMenuOpen ? "block" : "hidden"
+          className={`lg:hidden absolute top-14 left-0 w-full bg-gray-950 p-4 transition-all duration-300 ${isMenuOpen ? "block" : "hidden"
             }`}
         >
-          <ul className="flex flex-col gap-4">
+          <ul className="flex flex-col items-center  gap-4">
             {["Home", "About", "Skills", "Resume", "Services", "Projects", "Contact"].map(
               (item, index) => (
                 <li

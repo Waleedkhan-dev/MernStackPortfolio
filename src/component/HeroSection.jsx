@@ -15,7 +15,7 @@ const HeroSection = () => {
     });
   })
   const openLinkedin = () => {
-    window.open("https://www.linkedin.com/in/waleed-khan-b2aba4327/");
+    window.open("https://www.linkedin.com/in/muhammad-waleed-350018360/");
   };
   const openGithub = () => {
     window.open("https://github.com/waleedkhan69");
@@ -24,18 +24,18 @@ const HeroSection = () => {
   return (
     <Fragment>
       <div id="home" className="flex lg:mt-16 md:mt-14 sm:mt-24 justify-center items-center lg:h-[85vh] md:h-[50vh] sm:h-[20vh] px-6 md:px-12 lg:px-24">
-        <div className="flex flex-col md:flex-row items-center gap-12 w-full">
+        <div className="flex flex-col md:flex-row items-center gap-8 w-full">
           <div data-aos="fade-right" className="w-full md:w-[65%] text-center md:text-start mt-24 md:mt-0">
-            <h1 className="text-white text-3xl md:text-4xl font-semibold">
+            <h1 className="text-white text-3xl md:text-4xl font-normal">
               Hi, I’m <span className="text-[#FF014F]">waleed</span> <br />
               <span className="text-white">
                 <Typewriter
-                  words={["Full Stack Developer", "MERN Stack Developer", "DevOps Engineer"]}
+                  words={["Full Stack Developer", "MERN Stack Developer"]}
                   loop={0}
                   cursor
                   cursorStyle="|"
-                  typeSpeed={20}
-                  deleteSpeed={20}
+                  typeSpeed={40}
+                  deleteSpeed={50}
                   delaySpeed={1000}
                 />
               </span>

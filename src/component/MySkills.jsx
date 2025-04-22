@@ -16,7 +16,7 @@ const MySkills = () => {
  useEffect(() => {
   Aos.init({
    offset: 150,
-   duration: 1200,
+   duration: 1000,
    easing: "ease-out-back",
    delay: 100,
    once: false,
@@ -30,9 +30,9 @@ const MySkills = () => {
   { name: "Bootstrap", icon: <FaBootstrap />, percentage: 80, color: "bg-purple-600" },
   { name: "Tailwind CSS", icon: <SiTailwindcss />, percentage: 90, color: "bg-teal-500" },
   { name: "JavaScript", icon: <FaJs />, percentage: 75, color: "bg-yellow-500" },
-  { name: "React", icon: <FaReact />, percentage: 90, color: "bg-cyan-500" },
+  { name: "React", icon: <FaReact />, percentage: 80, color: "bg-cyan-500" },
   { name: "Node.js", icon: <FaNodeJs />, percentage: 70, color: "bg-green-600" },
-  { name: "Express.js", icon: <SiExpress />, percentage: 95, color: "bg-red-900" },
+  { name: "Express.js", icon: <SiExpress />, percentage: 65, color: "bg-red-900" },
   { name: "MongoDB", icon: <FaDatabase />, percentage: 80, color: "bg-green-500" },
  ];
 
