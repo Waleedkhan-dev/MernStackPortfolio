@@ -1,35 +1,62 @@
-import { Fragment } from "react";
+import { Fragment, useRef } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { CgWebsite } from "react-icons/cg";
 import { MdLocationPin } from "react-icons/md";
+import emailjs from "@emailjs/browser"
+import { ToastContainer, toast } from "react-toastify"
+
+
+
+
 
 const ContactUs = () => {
+ const form = useRef();
+
+ const sendEmail = (e) => {
+  e.preventDefault()
+  emailjs.sendForm("service_7qfyhcw", "template_a7e86ac", form.current, {
+   publicKey: "OArhGmdzE_PYqpovb"
+  }).then(() => {
+   toast.success("success")
+
+  }, (error) => {
+   toast.error("failed");
+
+  }
+  )
+ }
  return (
   <Fragment>
    <div id="contact" className="flex flex-col items-center justify-center py-12 px-6 bg-gray-950 min-h-screen text-white">
     <h1 className="text-4xl font-extrabold text-white mb-8">Get In Touch</h1>
     <div className="flex flex-col md:flex-row bg-gray-800 shadow-2xl rounded-lg p-10 w-full max-w-5xl">
      {/* Form Section */}
-     <form className="flex flex-col flex-1 space-y-6">
+     <form ref={form} onSubmit={sendEmail} className="flex flex-col flex-1 space-y-6">
       <input
        type="text"
+       required
        placeholder="Enter your Name"
        className="border border-gray-600 bg-gray-900 text-white rounded-lg p-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
       <input
        type="email"
+       required
+       name="from_name"
        placeholder="Enter your Email"
        className="border border-gray-600 bg-gray-900 text-white rounded-lg p-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
       <input
        type="tel"
+       required
        placeholder="Enter your Phone Number"
        className="border border-gray-600 bg-gray-900 text-white rounded-lg p-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
       <textarea
        cols="30"
        rows="5"
+       name="message"
+       required
        placeholder="Enter your Message"
        className="border border-gray-600 bg-gray-900 text-white rounded-lg p-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
       ></textarea>
@@ -66,6 +93,7 @@ const ContactUs = () => {
      </div>
     </div>
    </div>
+   <ToastContainer />
   </Fragment>
  );
 };

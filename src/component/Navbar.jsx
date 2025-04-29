@@ -16,7 +16,7 @@ const Navbar = () => {
     <Fragment>
       <nav className="flex items-center justify-between fixed shadow-2xl bg-gray-900 p-4  w-full top-0 z-50">
 
-        {/* Left section: Profile Image */}
+
         <div className="w-1/3 sm:w-1/4 md:w-1/5 flex justify-center items-center ">
 
           <SiWebpack className="text-white text-3xl cursor-pointer" onClick={() => window.location.href = "#home"} />
@@ -26,7 +26,7 @@ const Navbar = () => {
 
         <div className="lg:hidden flex justify-end items-center w-1/3">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
-            {isMenuOpen ? <IoCloseSharp size={28} /> : <IoMdMenu size={28} />}
+            {isMenuOpen ? <IoCloseSharp className="cursor-pointer" size={28} /> : <IoMdMenu className="cursor-pointer" size={28} />}
           </button>
         </div>
 

@@ -10,6 +10,7 @@ import Footer from './component/Footer'
 import ContactUs from './component/ContactUs'
 
 
+
 function App() {
 
 
@@ -25,8 +26,8 @@ function App() {
         <Projects />
         <ContactUs />
         <Footer />
-      </div>
 
+      </div>
     </Fragment>
   )
 }
