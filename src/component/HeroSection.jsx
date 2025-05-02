@@ -18,7 +18,7 @@ const HeroSection = () => {
     window.open("https://www.linkedin.com/in/muhammad-waleed-350018360/");
   };
   const openGithub = () => {
-    window.open("https://github.com/waleedkhan69");
+    window.open("https://github.com/Waleedkhan-dev");
   };
 
   return (
