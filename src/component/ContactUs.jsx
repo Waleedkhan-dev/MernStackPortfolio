@@ -74,8 +74,8 @@ const ContactUs = () => {
       </div>
       <div className="flex items-center space-x-3 mt-5">
        <MdOutlineAlternateEmail className="text-2xl text-blue-400" />
-       <a href="mailto:waledengineer786@gmail.com" className="text-white hover:underline text-lg">
-        waledengineer786@gmail.com
+       <a href="mailto:waleedcoder030@gmail.com" className="text-white hover:underline text-lg">
+        waleedcoder030@gmail.com
        </a>
       </div>
       <div className="flex items-center space-x-3 mt-4">
