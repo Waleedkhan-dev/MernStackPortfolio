@@ -1,6 +1,6 @@
 import { Fragment, useEffect } from "react";
 import pic1 from "../Images/portfoliofic.png";
-import resume from "../Images/fullStackResume.pdf";
+import resume from "../Images/Mwaleed.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -21,7 +21,7 @@ const AboutMe = () => {
  const handleDownload = () => {
   const link = document.createElement("a");
   link.href = resume;
-  link.download = "fullStackResume.pdf";
+  link.download = "Mwaleed.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
