@@ -1,6 +1,6 @@
 import { Fragment, useEffect } from "react";
 import pic1 from "../Images/portfoliofic.png";
-import resume from "../Images/Mwaleed.pdf";
+import resume from "../Images/Waleed_Resume.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
