@@ -70,26 +70,26 @@ const ContactUs = () => {
       <h2 className="text-3xl font-semibold mb-6 text-white">Contact Us</h2>
       <div className="flex items-center space-x-3 text-gray-300">
        <MdLocationPin className="text-2xl text-red-400" />
-       <p>Lodhran, Punjab, Pakistan</p>
+       <p>Bahawalpur, Punjab, Pakistan</p>
       </div>
       <div className="flex items-center space-x-3 mt-5">
        <MdOutlineAlternateEmail className="text-2xl text-blue-400" />
-       <a href="mailto:waleedcoder030@gmail.com" className="text-white hover:underline text-lg">
-        waleedcoder030@gmail.com
+       <a href="mailto:nawazabdullah278@gmail.com" className="text-white hover:underline text-lg">
+        nawazabdullah278@gmail.com
        </a>
       </div>
       <div className="flex items-center space-x-3 mt-4">
        <FaPhoneAlt className="text-2xl text-green-400" />
        <a href="tel:+923267514362" className="text-text hover:underline text-lg">
-        +92 326-7514362
+        +92 3065691445
        </a>
       </div>
-      <div className="flex items-center space-x-3 mt-4">
+      {/* <div className="flex items-center space-x-3 mt-4">
        <CgWebsite className="text-2xl text-gray-400" />
        <a href="https://waleedkhan.netlify.app/" className="text-white hover:underline text-lg">
         waleedkhan.netlify.app
        </a>
-      </div>
+      </div> */}
      </div>
     </div>
    </div>

@@ -1,5 +1,5 @@
 import { Fragment, useEffect } from "react";
-import pic1 from "../Images/portfoliofic.png";
+import pic1 from "../Images/abd.jpg";
 import resume from "../Images/Waleed_Resume.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -19,12 +19,12 @@ const AboutMe = () => {
  }, []);
 
  const handleDownload = () => {
-  const link = document.createElement("a");
-  link.href = resume;
-  link.download = "Mwaleed.pdf";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+  // const link = document.createElement("a");
+  // link.href = resume;
+  // link.download = "Mwaleed.pdf";
+  // document.body.appendChild(link);
+  // link.click();
+  // document.body.removeChild(link);
  };
 
  return (
