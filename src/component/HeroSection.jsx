@@ -1,6 +1,6 @@
 import { Fragment, useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
-import pic1 from "../Images/abd.jpg";
+import pic1 from "../Images/portfoliofic.png";
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import AOS from "aos"
 import "aos/dist/aos.css";
@@ -15,10 +15,10 @@ const HeroSection = () => {
     });
   })
   const openLinkedin = () => {
-    window.open("https://www.linkedin.com/in/muhammad-abdullah-7448a5306/");
+    window.open("https://www.linkedin.com/in/muhammad-waleed-350018360/");
   };
   const openGithub = () => {
-    window.open("https://github.com/nawazabdullah278");
+    window.open("https://github.com/Waleedkhan-dev");
   };
 
   return (
@@ -27,10 +27,10 @@ const HeroSection = () => {
         <div className="flex flex-col md:flex-row items-center gap-8 w-full">
           <div data-aos="fade-right" className="w-full md:w-[65%] text-center md:text-start mt-24 md:mt-0">
             <h1 className="text-white text-3xl md:text-4xl font-normal">
-              Hi, I’m <span className="text-[#FF014F]">Abdullah</span> <br />
+              Hi, I’m <span className="text-[#FF014F]">Waleed</span> <br />
               <span className="text-white">
                 <Typewriter
-                  words={[" Frontend Developer", "UI/UX Developer"]}
+                  words={[" Full Stack  Developer", "MERN Stack Devloper"]}
                   loop={0}
                   cursor
                   cursorStyle="|"
@@ -41,7 +41,7 @@ const HeroSection = () => {
               </span>
             </h1>
             <p className="text-white text-start mt-2">
-              I am a Frontend Developer specializing in building fast, responsive, and user-friendly web applications using React, JavaScript, Tailwind CSS, and modern UI/UX practices. I create clean, pixel-perfect designs and seamless user experiences across all devices. Let’s build something amazing!
+              I am a Full Stack Developer specializing in building fast, scalable, and user-friendly web applications using Next.js, TypeScript, React, Node.js, MongoDB, and modern UI/UX practices. I create clean, pixel-perfect designs and seamless experiences across all devices. Let’s build something amazing!
             </p>
             <div className="mt-4">
               <h2 className="text-white">Find me on</h2>
