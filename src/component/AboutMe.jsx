@@ -41,7 +41,7 @@ const AboutMe = () => {
     >
      <h1 className="font-bold text-white text-3xl">About Me</h1>
      <p className="text-gray-300 text-justify">
-      Hi, I’m Waleed, a passionate MERN Stack Developer specializing in building dynamic and scalable web applications. With expertise in MongoDB, Express.js, React.js, and Node.js, I love turning ideas into functional, user-friendly digital experiences. I’m all about clean code, seamless UI/UX, and robust back-end systems. Let’s create something amazing together!
+      Hi, I'm Muhammad Waleed, a Full Stack Developer with 2 years of professional experience specializing in the MERN Stack and building modern, scalable, and AI-powered web applications. I work with React, Next.js, TypeScript, Tailwind CSS, Node.js, Express, MongoDB, and Supabase to create clean, efficient, and reliable full-stack solutions. I also develop AI chatbots and automation systems using OpenAI and LangChain. My focus is on building fast, secure, and intuitive applications that combine strong frontend development with powerful backend logic.
      </p>
      <div className="mt-5">
       <button

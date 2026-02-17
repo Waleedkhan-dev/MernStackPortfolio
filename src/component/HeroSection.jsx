@@ -41,7 +41,7 @@ const HeroSection = () => {
               </span>
             </h1>
             <p className="text-white text-start mt-2">
-              I am a Full Stack Developer specializing in building fast, scalable, and user-friendly web applications using Next.js, TypeScript, React, Node.js, MongoDB, and modern UI/UX practices. I create clean, pixel-perfect designs and seamless experiences across all devices. Let’s build something amazing!
+              Full Stack Developer with 2+ years experience in MERN Stack & AI-powered solutions. I specialize in React, Next.js, TypeScript, Tailwind CSS, Node.js, Express, MongoDB, PostgreSQL, and Supabase. I build fast, secure, scalable web applications with clean code and modern practices. Let's create digital products that make an impact!
             </p>
             <div className="mt-4">
               <h2 className="text-white">Find me on</h2>

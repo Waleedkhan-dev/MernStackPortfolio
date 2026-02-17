@@ -2,11 +2,12 @@ import { Fragment, useEffect, useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 
 
-import img1 from "../Images/shiping.jpg";
-import img2 from "../Images/foods.jpg";
+import img1 from "../Images/bevvybullet.png";
+import img2 from "../Images/botbytesai.png";
 import img3 from "../Images/system.jpg";
-import img4 from "../Images/theeagle.png"
-import img5 from "../Images/redux.png"
+import img4 from "../Images/unifimed.png";
+import img5 from "../Images/pro.png"
+import img6 from "../Images/lms.png"
 import Aos from "aos";
 import "aos/dist/aos.css";
 const Projects = () => {
@@ -24,13 +25,13 @@ const Projects = () => {
  const myProjects = [
   {
    pic: img1,
-   title: "The Givers Consultancy",
-   link: "https://thegiversconsulting.com"
+   title: "BevvyBullet",
+   link: "https://www.bevvybullet.com"
   },
   {
    pic: img2,
-   title: "FoodPanda",
-   link: "https://foodpanda-eta-seven.vercel.app"
+   title: "BotBytesAI",
+   link: "https://botbytesai.com"
   },
   {
    pic: img3,
@@ -39,8 +40,8 @@ const Projects = () => {
   },
   {
    pic: img4,
-   title: "The Eagles.io",
-   link: "https://www.theeagles.io/"
+   title: "Unifimed Insight Nexus",
+   link: "https://unifimed-insight-nexus.vercel.app/consultation"
   },
   {
    pic: img5,
@@ -48,9 +49,10 @@ const Projects = () => {
    link: "https://redux-thunk-e-commerce.netlify.app/"
   },
   {
-   pic: img1,
-   title: "Project 6",
-   link: "https://thegiversconsulting.com"
+   pic: img6,
+   title: "Learning Management System",
+   link: "https://fyp-lms-frontend.vercel.app"
+
   }
  ];
 
