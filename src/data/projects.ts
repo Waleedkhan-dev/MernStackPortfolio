@@ -20,6 +20,36 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: 'orderflow',
+    title: 'OrderFlow',
+    tagline: 'Delivery & order management platform.',
+    category: 'Full Stack',
+    year: '2025',
+    image: '/projects/orderflow.png',
+    featured: true,
+    tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'PostgreSQL', 'Stripe'],
+    description:
+      'A full-stack delivery and order management platform that streamlines the flow from order placement to dispatch and fulfillment, with real-time tracking and an operations dashboard.',
+    features: [
+      'End-to-end order placement and management',
+      'Real-time order tracking and status updates',
+      'Operations dashboard for dispatch and fulfillment',
+      'Secure payments and checkout',
+      'Responsive UI optimized for speed',
+    ],
+    architecture:
+      'Next.js frontend with a Node API layer, PostgreSQL for orders and logistics data, realtime updates for live tracking, and payment integration. Deployed on Vercel with a managed database.',
+    challenges: [
+      'Keeping order state in sync across customer, operator, and delivery views in real time',
+      'Designing a fulfillment flow that stays reliable under concurrent updates',
+    ],
+    lessons: [
+      'Event-driven state updates keep multi-actor workflows consistent',
+      'Clear status modeling makes complex logistics flows easy to reason about',
+    ],
+    links: { live: 'https://orderflow.delivery/' },
+  },
+  {
     slug: 'bevvybullet',
     title: 'BevvyBullet',
     tagline: 'A modern beverage e-commerce experience.',
