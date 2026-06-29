@@ -80,6 +80,36 @@ export const projects: Project[] = [
     links: { live: 'https://www.keptcold.co.uk/' },
   },
   {
+    slug: 'lms',
+    title: 'Learning Management System',
+    tagline: 'Full-featured LMS for courses & students.',
+    category: 'Full Stack',
+    year: '2025',
+    image: '/projects/lms.png',
+    featured: true,
+    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Tailwind CSS'],
+    description:
+      'A complete learning management system built as a final-year project — course creation, enrollment, content delivery, and progress tracking for students and instructors.',
+    features: [
+      'Course creation and content management for instructors',
+      'Student enrollment and progress tracking',
+      'Authentication with role-based dashboards',
+      'Lesson delivery with structured modules',
+      'Responsive across desktop and mobile',
+    ],
+    architecture:
+      'Classic MERN architecture — React SPA, Express REST API, MongoDB with Mongoose models, JWT-based auth. Frontend on Vercel, API on a Node host.',
+    challenges: [
+      'Modeling the course → module → lesson hierarchy flexibly',
+      'Keeping instructor and student experiences cohesive in one app',
+    ],
+    lessons: [
+      'Good data modeling upfront simplifies every feature downstream',
+      'Splitting dashboards by role keeps each experience focused',
+    ],
+    links: { live: 'https://fyp-lms-frontend.vercel.app' },
+  },
+  {
     slug: 'bevvybullet',
     title: 'BevvyBullet',
     tagline: 'A modern beverage e-commerce experience.',
@@ -167,36 +197,6 @@ export const projects: Project[] = [
       'Accessibility constraints often lead to better UX for everyone',
     ],
     links: { live: 'https://unifimed-insight-nexus.vercel.app/consultation' },
-  },
-  {
-    slug: 'lms',
-    title: 'Learning Management System',
-    tagline: 'Full-featured LMS for courses & students.',
-    category: 'Full Stack',
-    year: '2025',
-    image: '/projects/lms.png',
-    featured: true,
-    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Tailwind CSS'],
-    description:
-      'A complete learning management system built as a final-year project — course creation, enrollment, content delivery, and progress tracking for students and instructors.',
-    features: [
-      'Course creation and content management for instructors',
-      'Student enrollment and progress tracking',
-      'Authentication with role-based dashboards',
-      'Lesson delivery with structured modules',
-      'Responsive across desktop and mobile',
-    ],
-    architecture:
-      'Classic MERN architecture — React SPA, Express REST API, MongoDB with Mongoose models, JWT-based auth. Frontend on Vercel, API on a Node host.',
-    challenges: [
-      'Modeling the course → module → lesson hierarchy flexibly',
-      'Keeping instructor and student experiences cohesive in one app',
-    ],
-    lessons: [
-      'Good data modeling upfront simplifies every feature downstream',
-      'Splitting dashboards by role keeps each experience focused',
-    ],
-    links: { live: 'https://fyp-lms-frontend.vercel.app' },
   },
   {
     slug: 'system-demo',
