@@ -50,6 +50,36 @@ export const projects: Project[] = [
     links: { live: 'https://orderflow.delivery/' },
   },
   {
+    slug: 'keptcold',
+    title: 'KeptCold',
+    tagline: 'Cold-chain delivery & temperature-controlled logistics.',
+    category: 'Full Stack',
+    year: '2025',
+    image: '/projects/keptcold.png',
+    featured: true,
+    tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'PostgreSQL'],
+    description:
+      'A web platform for cold-chain delivery and temperature-controlled logistics, giving customers a clean way to book, manage, and track refrigerated shipments.',
+    features: [
+      'Booking and management of temperature-controlled deliveries',
+      'Shipment tracking and status updates',
+      'Clear, conversion-focused marketing site',
+      'Responsive, accessible UI across devices',
+      'Fast load times and SEO-friendly pages',
+    ],
+    architecture:
+      'Next.js frontend with a Node API layer and PostgreSQL for bookings and shipment data. Server-rendered pages for SEO, with optimized assets. Deployed for reliability and speed.',
+    challenges: [
+      'Communicating a logistics service clearly and building trust through UX',
+      'Modeling bookings and shipment states for a temperature-sensitive workflow',
+    ],
+    lessons: [
+      'For service businesses, clarity and trust signals drive conversions',
+      'Solid data modeling up front keeps logistics features maintainable',
+    ],
+    links: { live: 'https://www.keptcold.co.uk/' },
+  },
+  {
     slug: 'bevvybullet',
     title: 'BevvyBullet',
     tagline: 'A modern beverage e-commerce experience.',
