@@ -198,7 +198,7 @@ export const projects: Project[] = [
       'Information hierarchy is a feature in data-heavy products',
       'Accessibility constraints often lead to better UX for everyone',
     ],
-    links: { live: 'https://unifimed-insight-nexus.vercel.app/consultation' },
+    links: { live: 'https://unifimed-insight-nexus.vercel.app/login' },
   },
   {
     slug: 'system-demo',
