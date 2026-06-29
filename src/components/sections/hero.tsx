@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Download, Github, Linkedin, MessageCircle, Sparkles } from 'lucide-react';
+import { ArrowDown, ArrowRight, Download, Github, Linkedin, MessageCircle } from 'lucide-react';
 import { profile, socials } from '@/data/profile';
 import { Button } from '@/components/ui/button';
 import { Magnetic } from '@/components/shared/magnetic';
@@ -97,8 +97,8 @@ export function Hero() {
                 className="rounded-full"
                 onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                <Sparkles className="h-4 w-4" />
                 View My Work
+                <ArrowRight className="h-4 w-4" />
               </Button>
             </Magnetic>
             <Button asChild variant="outline" size="lg" className="rounded-full">

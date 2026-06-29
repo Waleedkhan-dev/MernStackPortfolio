@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Code2, Rocket, Sparkles, Users } from 'lucide-react';
+import { Code2, Rocket, Compass, Users } from 'lucide-react';
 import { Section } from '@/components/shared/section';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { profile } from '@/data/profile';
@@ -19,7 +19,7 @@ const pillars = [
     body: 'Fast, scalable web apps: e-commerce, dashboards, SaaS, and AI chatbots — from polished UIs to secure APIs and well-modeled databases.',
   },
   {
-    icon: Sparkles,
+    icon: Compass,
     title: 'My Philosophy',
     body: 'Clean architecture, reusable components, and performance by default. I write code that’s readable today and maintainable tomorrow.',
   },
