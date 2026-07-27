@@ -14,7 +14,7 @@ export function Cursor() {
   const y = useMotionValue(-100);
   const springX = useSpring(x, { stiffness: 400, damping: 30, mass: 0.4 });
   const springY = useSpring(y, { stiffness: 400, damping: 30, mass: 0.4 });
-
+//   const springX = useSpring(x, { stiffness: 400, damping: 30, mass: 0.4 });
   useEffect(() => {
     if (!fine) return;
     const move = (e: MouseEvent) => {
