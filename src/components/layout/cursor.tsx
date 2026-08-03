@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { useMediaQuery } from '@/hooks/use-media-query';
 
-/** Custom trailing cursor — disabled on touch / coarse pointers and reduced motion. */
+/** Custom trailing cursor — disabled on touch /d motion. */
 export function Cursor() {
   const fine = useMediaQuery('(pointer: fine)');
   const [hovering, setHovering] = useState(false);
