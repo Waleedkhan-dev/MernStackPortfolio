@@ -8,78 +8,79 @@
  * ─────────────────────────────────────────────────────────────────────────
  *  DESIGN TOKENS
  *  Color is stored as raw HSL channels so Tailwind utilities can add
- *  opacity (e.g. bg-background/80). Signature brand gradient: violet → rose → cyan.
+ *  opacity (e.g. bg-background/80). Minimal monochrome base + a single
+ *  emerald accent — no multi-hue rainbow gradients.
  * ─────────────────────────────────────────────────────────────────────────
  */
 :root {
-  --background: 220 33% 98%;
-  --foreground: 224 30% 9%;
+  --background: 210 20% 98%;
+  --foreground: 222 20% 10%;
 
   --card: 0 0% 100%;
-  --card-foreground: 224 30% 9%;
+  --card-foreground: 222 20% 10%;
 
   --popover: 0 0% 100%;
-  --popover-foreground: 224 30% 9%;
+  --popover-foreground: 222 20% 10%;
 
-  --primary: 262 83% 58%;
+  --primary: 160 84% 32%;
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 220 16% 94%;
-  --secondary-foreground: 224 30% 12%;
+  --secondary: 210 20% 95%;
+  --secondary-foreground: 222 20% 12%;
 
-  --muted: 220 16% 94%;
+  --muted: 210 20% 95%;
   --muted-foreground: 220 9% 42%;
 
-  --accent: 220 16% 94%;
-  --accent-foreground: 224 30% 12%;
+  --accent: 160 30% 94%;
+  --accent-foreground: 160 84% 22%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
-  --border: 220 15% 88%;
-  --input: 220 15% 88%;
-  --ring: 262 83% 58%;
+  --border: 220 13% 89%;
+  --input: 220 13% 89%;
+  --ring: 160 84% 32%;
 
-  /* signature gradient stops */
-  --brand-1: 262 83% 62%;
-  --brand-2: 322 85% 62%;
-  --brand-3: 190 95% 50%;
+  /* subtle mono-emerald gradient stops */
+  --brand-1: 160 84% 28%;
+  --brand-2: 158 65% 40%;
+  --brand-3: 152 55% 52%;
 
   --radius: 0.75rem;
 }
 
 .dark {
-  --background: 224 47% 5%;
-  --foreground: 210 40% 98%;
+  --background: 222 20% 6%;
+  --foreground: 210 20% 96%;
 
-  --card: 224 38% 8%;
-  --card-foreground: 210 40% 98%;
+  --card: 222 18% 9%;
+  --card-foreground: 210 20% 96%;
 
-  --popover: 224 40% 7%;
-  --popover-foreground: 210 40% 98%;
+  --popover: 222 18% 8%;
+  --popover-foreground: 210 20% 96%;
 
-  --primary: 262 90% 68%;
-  --primary-foreground: 224 47% 6%;
+  --primary: 158 64% 52%;
+  --primary-foreground: 222 20% 6%;
 
-  --secondary: 223 26% 14%;
-  --secondary-foreground: 210 40% 98%;
+  --secondary: 222 15% 14%;
+  --secondary-foreground: 210 20% 96%;
 
-  --muted: 223 26% 13%;
-  --muted-foreground: 217 15% 62%;
+  --muted: 222 15% 13%;
+  --muted-foreground: 217 10% 60%;
 
-  --accent: 223 26% 15%;
-  --accent-foreground: 210 40% 98%;
+  --accent: 160 30% 14%;
+  --accent-foreground: 150 70% 80%;
 
   --destructive: 0 72% 55%;
-  --destructive-foreground: 210 40% 98%;
+  --destructive-foreground: 210 20% 96%;
 
-  --border: 223 24% 16%;
-  --input: 223 24% 18%;
-  --ring: 262 90% 68%;
+  --border: 222 15% 16%;
+  --input: 222 15% 18%;
+  --ring: 158 64% 52%;
 
-  --brand-1: 262 90% 70%;
-  --brand-2: 322 90% 66%;
-  --brand-3: 190 95% 58%;
+  --brand-1: 158 64% 45%;
+  --brand-2: 152 55% 55%;
+  --brand-3: 145 45% 65%;
 }
 
 /* Map tokens → Tailwind theme so `bg-background`, `text-primary`, etc. work */
