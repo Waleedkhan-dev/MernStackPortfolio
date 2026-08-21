@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-// how
+
 /** Scroll-spy: returns the id of the section currently in view. */
 export function useActiveSection(sectionIds: string[]) {
   const [active, setActive] = useState<string>(sectionIds[0] ?? '');
