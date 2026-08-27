@@ -6,7 +6,7 @@ import { Section } from '@/components/shared/section';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { profile } from '@/data/profile';
 import { fadeInUp, staggerContainer, viewportOnce } from '@/lib/motion';
-// hello
+
 const pillars = [
   {
     icon: Code2,
