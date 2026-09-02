@@ -10,7 +10,7 @@ import { SectionHeading } from '@/components/shared/section-heading';
 import { Button } from '@/components/ui/button';
 import { profile, socials } from '@/data/profile';
 import { fadeInUp, staggerContainer, viewportOnce } from '@/lib/motion';
-
+// can be replaced with your own emailjs service/template/public key in .env.local
 const channels = [
   { icon: Mail, label: 'Email', value: profile.email, href: socials.email },
   { icon: Linkedin, label: 'LinkedIn', value: 'Muhammad Waleed', href: socials.linkedin },
