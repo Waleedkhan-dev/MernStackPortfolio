@@ -29,13 +29,13 @@ export const metadata: Metadata = {
     title: siteConfig.title,
     description: siteConfig.description,
     siteName: profile.name,
-    images: [{ url: '/images/avatar.png', width: 1200, height: 630, alt: profile.name }],
+    images: [{ url: siteConfig.ogImage, width: 1200, height: 630, alt: siteConfig.title }],
   },
   twitter: {
     card: 'summary_large_image',
     title: siteConfig.title,
     description: siteConfig.description,
-    images: ['/images/avatar.png'],
+    images: [siteConfig.ogImage],
   },
   icons: {
     icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
